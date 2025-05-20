@@ -17,12 +17,12 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #0d0e0e;
+  /* background-color: #0d0e0e; */
   /* background-color: transparent; */
+  /* background-color: #0f0f0fc1; */
   padding: 0 20px;
   height: 60px;
   border-bottom: 1px solid #202c3d;
-  /* position: relative; */
   position: fixed;
   /* background-color: 0.2px white transparent ; */
   margin-right: 14px;
@@ -32,7 +32,29 @@ body {
   width: 1200px;
   border-radius: 6px;
   box-sizing: border-box;
+  /* box-shadow: 0 2px 5px rgba(0,0,0,0.1);     */
+  /* box-shadow: 0 2px 5px rgba(24, 17, 17, 0.1); */
+  background: rgba(20, 6, 10, 0.6);    /* Semi-transparent background */
+  backdrop-filter: blur(17px);     /* Blur Effect */
+  -webkit-backdrop-filter: blur(17px);   /* For Safari */
   z-index: 1000;
+}
+
+/* categories image */
+.categories-btn {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 4px;
+  margin: 0 10px;
+  opacity: 0.8;
+  transition: opacity 0.2s;
+  border-radius: 50%;
+}
+
+.categories-btn:hover {
+  opacity: 1;
+  /* background-color: #fff; */
 }
 
 .nav-left {
@@ -291,7 +313,7 @@ body {
 }
 .hero-content {
   position: absolute;
-  top: 20%;
+  top: 43%;
   left: 5%;
   transform: translateY(-20%);
   max-width: 500px;
