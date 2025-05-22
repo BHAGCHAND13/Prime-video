@@ -354,10 +354,7 @@ color: white;
   height: 8px;
 }
 
-.scroll-container::-webkit-scrollbar-thumb {
-  background-color: #555;
-  border-radius: 10px;
-}
+
 
 .thumbnail {
   flex: 0 0 auto;
