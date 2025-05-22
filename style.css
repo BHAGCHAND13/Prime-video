@@ -206,6 +206,7 @@ select {
   margin-right: 30px;
   border-bottom-left-radius: 6px;
   border-bottom-right-radius: 6px;
+  
 }
 
  
@@ -227,6 +228,7 @@ select {
 
 /* Navigation Links */
 .nav-links  {
+  height: 10px;
   display: inline;
   flex-wrap: wrap;
   justify-content: start;
@@ -234,14 +236,14 @@ select {
   display: flex;
   list-style: none;
   gap: 10px;
-  margin-left: 0px;
+  margin-right: 10px;
 }
 
 
 
 .nav-links a:not(.subbtn) {
-  padding: 7px 14px;
-  border-radius: 5px;
+  padding: 10px 20px;
+  border-radius:9px;
   color: #FFFFFF;
   text-decoration: none;
   font-size: 16px;
@@ -299,19 +301,19 @@ select {
    background-color: #0F79AF;
   color: white;
   border: none;
-  padding: 8px 16px;
-  border-radius: 4px;
+  padding: 10px 20px;
+  border-radius: 9px;
   font-weight: bold;
   cursor: pointer;
   transition: background-color 0.6s;
 }
 .subbtn {
   font-weight: 400;
-  
+  justify-content: center;
   color: rgb(255, 255, 255);
   border: none;
-  padding: 8px 16px;
-  border-radius: 4px;
+  padding: 10px 20px;
+  border-radius: 9px;
   font-weight: bold;
   cursor: pointer;
   transition: background-color 0.1s;
