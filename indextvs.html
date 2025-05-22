@@ -12,7 +12,14 @@
   <!-- NAVBAR -->
   <nav class="navbar" >
     <div class="logo">prime <span>video</span></div>
+    <div>
     <button class="menu-toggle" id="menu-toggle">&#9776;</button>
+    <script>
+  document.querySelector('.menu-toggle').addEventListener('click', function() {
+    document.querySelector('.nav-links').classList.toggle('show');
+  });
+</script>
+</div>
     <ul class="nav-links">
       <li><a href="index.html">Home</a></li>
       <li><a href="movie.html">Movies</a></li>
@@ -161,28 +168,48 @@
   </div>
 </section>
 
-<section class="scroll-section">
+<section class="scroll-section-alt">
   <div class="scroll-header">
-    <h2>Throwback TV </h2>
-    <a href="#">See more &gt;</a>
+    <h2>Top 10 TV shows in India <i class="fa-solid fa-arrow-rotate-right"></i></h2>
   </div>
-<div class="scroll-container">
-    <div class="thumbnail"><img src="https://m.media-amazon.com/images/S/pv-target-images/dba04e61f844b918594d6884cb4575bb9bb11426908d391c446aa3d21a6983fa._UR1920,1080_CLs%7C1920,1080%7C/G/bundle/BottomRightCardGradient16x9.png,/G/01/digital/video/merch/subs/benefit-id/m-r/Prime/logos/channels-logo-white.png%7C0,0,1920,1080+0,0,1920,1080+1578,847,263,156_SX600_FMwebp_.png" alt="Movie 4"></div>
-    <div class="thumbnail"><img src="https://m.media-amazon.com/images/S/pv-target-images/bb410662a8bc82da0bd4b881a9f4988bce01777401cbdf1635adcfe5d14301a6._UR1920,1080_CLs%7C1920,1080%7C/G/bundle/BottomRightCardGradient16x9.png,/G/01/digital/video/merch/subs/benefit-id/m-r/Prime/logos/channels-logo-white.png%7C0,0,1920,1080+0,0,1920,1080+1578,847,263,156_SX600_FMwebp_.jpg" alt="Movie 5"></div>
-    <!-- Add more thumbnails as needed -->
-     <div class="thumbnail"><img src="https://m.media-amazon.com/images/S/pv-target-images/bde77bcc13f9b2b42f06f8a6048f32a2cfa880e0ea69f85d03b8e91a4d00bf68._UR1920,1080_CLs%7C1920,1080%7C/G/bundle/BottomRightCardGradient16x9.png,/G/01/digital/video/merch/subs/benefit-id/m-r/Prime/logos/channels-logo-white.png%7C0,0,1920,1080+0,0,1920,1080+1578,847,263,156_SX600_FMwebp_.jpg" alt="Movie 1"></div>
-    <div class="thumbnail"><img src="https://m.media-amazon.com/images/S/pv-target-images/6e9203e04bb26ab3c124b1544929041fd1815afd63b95d587fee1f28df9f4e08._UR1920,1080_CLs%7C1920,1080%7C/G/bundle/BottomRightCardGradient16x9.png,/G/01/digital/video/merch/subs/benefit-id/m-r/Prime/logos/channels-logo-white.png%7C0,0,1920,1080+0,0,1920,1080+1578,847,263,156_SX600_FMwebp_.jpg" alt="Movie 2"></div>
-    <div class="thumbnail"><img src="https://m.media-amazon.com/images/S/pv-target-images/96a97cdb5403621ad2b59847a1db13b54cd909e6833c166634a1945643adb6ce._UR1920,1080_CLs%7C1920,1080%7C/G/bundle/BottomRightCardGradient16x9.png,/G/01/digital/video/merch/subs/benefit-id/m-r/Prime/logos/channels-logo-white.png%7C0,0,1920,1080+0,0,1920,1080+1578,847,263,156_SX600_FMwebp_.jpg" alt="Movie 3"></div>
-    <div class="thumbnail"><img src="https://m.media-amazon.com/images/S/pv-target-images/91f6feff5c6e9291de9e39f22fc80473425766d660b10b5b166751a3cde3930e._UR1920,1080_CLs%7C1920,1080%7C/G/bundle/BottomRightCardGradient16x9.png,/G/01/digital/video/merch/subs/benefit-id/m-r/Prime/logos/channels-logo-white.png%7C0,0,1920,1080+0,0,1920,1080+1578,847,263,156_SX600_FMwebp_.png" alt="Movie 4"></div>
-    <div class="thumbnail"><img src="https://m.media-amazon.com/images/S/pv-target-images/72b69c5d0f16e4548fa2b9a06745c70a6f29f8e1e6f9a25cd4ec4286dc11b7f7._UR1920,1080_CLs%7C1920,1080%7C/G/bundle/BottomRightCardGradient16x9.png,/G/01/digital/video/merch/subs/benefit-id/m-r/Prime/logos/channels-logo-white.png%7C0,0,1920,1080+0,0,1920,1080+1578,847,263,156_SX600_FMwebp_.png" alt="Movie 5"></div>
-    <!-- Add more thumbnails as needed -->
-     <div class="thumbnail"><img src="https://cdn.dribbble.com/userupload/13597391/file/original-71ca481cc3fadd1f5daa88d94b4b8711.png?resize=752x&vertical=center" alt="Movie 1"></div>
-    <div class="thumbnail"><img src="https://m.media-amazon.com/images/S/pv-target-images/ea7bce0351ae14129a1a3c93c7b00b7922bc3d1ebd2f1fe439b991c0d832ff2a._UR1920,1080_CLs%7C1920,1080%7C/G/bundle/BottomRightCardGradient16x9.png,/G/01/digital/video/merch/subs/benefit-id/m-r/Prime/logos/channels-logo-white.png%7C0,0,1920,1080+0,0,1920,1080+1578,847,263,156_SX600_FMwebp_.jpg" alt="Movie 2"></div>
-    <div class="thumbnail"><img src="https://m.media-amazon.com/images/S/pv-target-images/cf5a92bad13119066f3aa3da434bdd5fb797710549dfb8f31205dace1bfef269._UR1920,1080_CLs%7C1920,1080%7C/G/bundle/BottomRightCardGradient16x9.png,/G/01/digital/video/merch/subs/benefit-id/m-r/Prime/logos/channels-logo-white.png%7C0,0,1920,1080+0,0,1920,1080+1578,847,263,156_SX600_FMwebp_.jpg" alt="Movie 3"></div>
-    <div class="thumbnail"><img src="https://m.media-amazon.com/images/S/pv-target-images/4f07b84cb9c89c3cb519ae80d7dd99f2d7d3476db809e49b0f3c54b0f7416eae._UR1920,1080_CLs%7C1920,1080%7C/G/bundle/BottomRightCardGradient16x9.png,/G/01/digital/video/merch/subs/benefit-id/m-r/Prime/logos/channels-logo-white.png%7C0,0,1920,1080+0,0,1920,1080+1578,847,263,156_SX600_FMwebp_.jpg" alt="Movie 4"></div>
-    <div class="thumbnail"><img src="https://m.media-amazon.com/images/S/pv-target-images/5e0451c701ba6507b20b914a50eff4fd3305333c256d520e2f5840808e29e0de._UR1920,1080_CLs%7C1920,1080%7C/G/bundle/BottomRightCardGradient16x9.png,/G/01/digital/video/merch/subs/benefit-id/m-r/Prime/logos/channels-logo-white.png%7C0,0,1920,1080+0,0,1920,1080+1578,847,263,156_SX600_FMwebp_.png" alt="Movie 5"></div>
-    <!-- Add more thumbnails as needed -->
+
+  <div class="scroll-container-alt">
+    <div class="ranked-thumbnail">
+      
+      <img src="https://m.media-amazon.com/images/S/pv-target-images/5e0451c701ba6507b20b914a50eff4fd3305333c256d520e2f5840808e29e0de._UR1920,1080_CLs%7C1920,1080%7C/G/bundle/BottomRightCardGradient16x9.png,/G/01/digital/video/merch/subs/benefit-id/m-r/Prime/logos/channels-logo-white.png%7C0,0,1920,1080+0,0,1920,1080+1578,847,263,156_SX600_FMwebp_.png" alt="Movie 5"></div>
+    <div class="ranked-thumbnail">
+      
+      <img src="https://cdn.dribbble.com/userupload/13597391/file/original-71ca481cc3fadd1f5daa88d94b4b8711.png?resize=752x&vertical=center" alt="Movie 1"></div>
+    <div class="thumbnail"><img src="https://m.media-amazon.com/images/S/pv-target-images/ea7bce0351ae14129a1a3c93c7b00b7922bc3d1ebd2f1fe439b991c0d832ff2a._UR1920,1080_CLs%7C1920,1080%7C/G/bundle/BottomRightCardGradient16x9.png,/G/01/digital/video/merch/subs/benefit-id/m-r/Prime/logos/channels-logo-white.png%7C0,0,1920,1080+0,0,1920,1080+1578,847,263,156_SX600_FMwebp_.jpg" alt="Show 2" />
+    </div>
+    <div class="ranked-thumbnail">
+    
+      <img src="https://m.media-amazon.com/images/I/71niXI3lxlL._AC_UF894,1000_QL80_.jpg" alt="Show 3" />
+    </div>
+    <div class="ranked-thumbnail">
+      
+      <img src="https://m.media-amazon.com/images/S/pv-target-images/4c31cd58f13628f534fbe50f52a569bd03030b06c721f0a38b1ad022f43cd543._UR1920,1080_CLs%7C1920,1080%7C/G/bundle/BottomRightCardGradient16x9.png,/G/01/digital/video/merch/subs/benefit-id/m-r/Prime/logos/channels-logo-white.png%7C0,0,1920,1080+0,0,1920,1080+1578,847,263,156_SX720_FMwebp_.jpg" alt="Show 4" />
+    </div>
+    <div class="ranked-thumbnail">
+      
+      <img src="https://m.media-amazon.com/images/S/pv-target-images/fe23bc58cb9392493206e26d20b48522c6fa3da34d89eaeb6cdd385d587559b3._UR1920,1080_CLs%7C1920,1080%7C/G/bundle/BottomRightCardGradient16x9.png,/G/01/digital/video/merch/subs/benefit-id/m-r/Prime/logos/channels-logo-white.png%7C0,0,1920,1080+0,0,1920,1080+1578,847,263,156_SX720_FMwebp_.jpg" alt="Show 1" />
+    </div>
+    <div class="ranked-thumbnail">
+
+      <img src="https://m.media-amazon.com/images/S/pv-target-images/0164c655385a579cea55caff7939a2d7c7567124e9eabf1301764a86ca6b1afa._UR1920,1080_CLs%7C1920,1080%7C/G/bundle/BottomRightCardGradient16x9.png,/G/01/digital/video/merch/subs/benefit-id/m-r/Prime/logos/channels-logo-white.png%7C0,0,1920,1080+0,0,1920,1080+1578,847,263,156_SX720_FMwebp_.jpg" alt="Show 2" />
+    </div>
+    <div class="ranked-thumbnail">
+      
+      <img src="https://m.media-amazon.com/images/S/pv-target-images/7ce16e1f1c03a31f74d7a4e0bbdab5e4b9594ccb9655bc41c22f523ebd1ad53b._UR1920,1080_CLs%7C1920,1080%7C/G/bundle/BottomRightCardGradient16x9.png,/G/01/digital/video/merch/subs/benefit-id/m-r/Prime/logos/channels-logo-white.png%7C0,0,1920,1080+0,0,1920,1080+1578,847,263,156_SX600_FMwebp_.jpg" alt="Show 3" />
+    </div>
+    <div class="ranked-thumbnail">
+      
+      <img src="https://m.media-amazon.com/images/S/pv-target-images/46823792395c8fe5c60a113997d54ea4eccf8a8eb9dd93e08a2e0f575af3bd80._UR1920,1080_CLs%7C1920,1080%7C/G/bundle/BottomRightCardGradient16x9.png,/G/01/digital/video/merch/subs/benefit-id/m-r/Prime/logos/channels-logo-white.png%7C0,0,1920,1080+0,0,1920,1080+1578,847,263,156_SX720_FMwebp_.jpg" alt="Show 4" />
+    </div>
+    <!-- Add more as needed -->
   </div>
+</section>
+
 
 </section><section class="scroll-section">
   <div class="scroll-header">
@@ -191,22 +218,32 @@
   </div>
 
 <div class="scroll-container">
-    <div class="thumbnail"><img src="https://m.media-amazon.com/images/S/pv-target-images/dba04e61f844b918594d6884cb4575bb9bb11426908d391c446aa3d21a6983fa._UR1920,1080_CLs%7C1920,1080%7C/G/bundle/BottomRightCardGradient16x9.png,/G/01/digital/video/merch/subs/benefit-id/m-r/Prime/logos/channels-logo-white.png%7C0,0,1920,1080+0,0,1920,1080+1578,847,263,156_SX600_FMwebp_.png" alt="Movie 4"></div>
-    <div class="thumbnail"><img src="https://m.media-amazon.com/images/S/pv-target-images/bb410662a8bc82da0bd4b881a9f4988bce01777401cbdf1635adcfe5d14301a6._UR1920,1080_CLs%7C1920,1080%7C/G/bundle/BottomRightCardGradient16x9.png,/G/01/digital/video/merch/subs/benefit-id/m-r/Prime/logos/channels-logo-white.png%7C0,0,1920,1080+0,0,1920,1080+1578,847,263,156_SX600_FMwebp_.jpg" alt="Movie 5"></div>
-    <!-- Add more thumbnails as needed -->
-     <div class="thumbnail"><img src="https://m.media-amazon.com/images/S/pv-target-images/bde77bcc13f9b2b42f06f8a6048f32a2cfa880e0ea69f85d03b8e91a4d00bf68._UR1920,1080_CLs%7C1920,1080%7C/G/bundle/BottomRightCardGradient16x9.png,/G/01/digital/video/merch/subs/benefit-id/m-r/Prime/logos/channels-logo-white.png%7C0,0,1920,1080+0,0,1920,1080+1578,847,263,156_SX600_FMwebp_.jpg" alt="Movie 1"></div>
-    <div class="thumbnail"><img src="https://m.media-amazon.com/images/S/pv-target-images/6e9203e04bb26ab3c124b1544929041fd1815afd63b95d587fee1f28df9f4e08._UR1920,1080_CLs%7C1920,1080%7C/G/bundle/BottomRightCardGradient16x9.png,/G/01/digital/video/merch/subs/benefit-id/m-r/Prime/logos/channels-logo-white.png%7C0,0,1920,1080+0,0,1920,1080+1578,847,263,156_SX600_FMwebp_.jpg" alt="Movie 2"></div>
-    <div class="thumbnail"><img src="https://m.media-amazon.com/images/S/pv-target-images/96a97cdb5403621ad2b59847a1db13b54cd909e6833c166634a1945643adb6ce._UR1920,1080_CLs%7C1920,1080%7C/G/bundle/BottomRightCardGradient16x9.png,/G/01/digital/video/merch/subs/benefit-id/m-r/Prime/logos/channels-logo-white.png%7C0,0,1920,1080+0,0,1920,1080+1578,847,263,156_SX600_FMwebp_.jpg" alt="Movie 3"></div>
-    <div class="thumbnail"><img src="https://m.media-amazon.com/images/S/pv-target-images/91f6feff5c6e9291de9e39f22fc80473425766d660b10b5b166751a3cde3930e._UR1920,1080_CLs%7C1920,1080%7C/G/bundle/BottomRightCardGradient16x9.png,/G/01/digital/video/merch/subs/benefit-id/m-r/Prime/logos/channels-logo-white.png%7C0,0,1920,1080+0,0,1920,1080+1578,847,263,156_SX600_FMwebp_.png" alt="Movie 4"></div>
-    <div class="thumbnail"><img src="https://m.media-amazon.com/images/S/pv-target-images/72b69c5d0f16e4548fa2b9a06745c70a6f29f8e1e6f9a25cd4ec4286dc11b7f7._UR1920,1080_CLs%7C1920,1080%7C/G/bundle/BottomRightCardGradient16x9.png,/G/01/digital/video/merch/subs/benefit-id/m-r/Prime/logos/channels-logo-white.png%7C0,0,1920,1080+0,0,1920,1080+1578,847,263,156_SX600_FMwebp_.png" alt="Movie 5"></div>
-    <!-- Add more thumbnails as needed -->
-     <div class="thumbnail"><img src="https://cdn.dribbble.com/userupload/13597391/file/original-71ca481cc3fadd1f5daa88d94b4b8711.png?resize=752x&vertical=center" alt="Movie 1"></div>
-    <div class="thumbnail"><img src="https://m.media-amazon.com/images/S/pv-target-images/ea7bce0351ae14129a1a3c93c7b00b7922bc3d1ebd2f1fe439b991c0d832ff2a._UR1920,1080_CLs%7C1920,1080%7C/G/bundle/BottomRightCardGradient16x9.png,/G/01/digital/video/merch/subs/benefit-id/m-r/Prime/logos/channels-logo-white.png%7C0,0,1920,1080+0,0,1920,1080+1578,847,263,156_SX600_FMwebp_.jpg" alt="Movie 2"></div>
-    <div class="thumbnail"><img src="https://m.media-amazon.com/images/S/pv-target-images/cf5a92bad13119066f3aa3da434bdd5fb797710549dfb8f31205dace1bfef269._UR1920,1080_CLs%7C1920,1080%7C/G/bundle/BottomRightCardGradient16x9.png,/G/01/digital/video/merch/subs/benefit-id/m-r/Prime/logos/channels-logo-white.png%7C0,0,1920,1080+0,0,1920,1080+1578,847,263,156_SX600_FMwebp_.jpg" alt="Movie 3"></div>
-    <div class="thumbnail"><img src="https://m.media-amazon.com/images/S/pv-target-images/4f07b84cb9c89c3cb519ae80d7dd99f2d7d3476db809e49b0f3c54b0f7416eae._UR1920,1080_CLs%7C1920,1080%7C/G/bundle/BottomRightCardGradient16x9.png,/G/01/digital/video/merch/subs/benefit-id/m-r/Prime/logos/channels-logo-white.png%7C0,0,1920,1080+0,0,1920,1080+1578,847,263,156_SX600_FMwebp_.jpg" alt="Movie 4"></div>
-    <div class="thumbnail"><img src="https://m.media-amazon.com/images/S/pv-target-images/5e0451c701ba6507b20b914a50eff4fd3305333c256d520e2f5840808e29e0de._UR1920,1080_CLs%7C1920,1080%7C/G/bundle/BottomRightCardGradient16x9.png,/G/01/digital/video/merch/subs/benefit-id/m-r/Prime/logos/channels-logo-white.png%7C0,0,1920,1080+0,0,1920,1080+1578,847,263,156_SX600_FMwebp_.png" alt="Movie 5"></div>
-    <!-- Add more thumbnails as needed -->
-  </div>
+    <div class="scroll-container">
+  <div class="thumbnail"><img src="https://m.media-amazon.com/images/S/pv-target-images/ea7bce0351ae14129a1a3c93c7b00b7922bc3d1ebd2f1fe439b991c0d832ff2a._UR1920,1080_CLs|1920,1080|/G/bundle/BottomRightCardGradient16x9.png,/G/01/digital/video/merch/subs/benefit-id/m-r/Prime/logos/channels-logo-white.png|0,0,1920,1080+0,0,1920,1080+1578,847,263,156_SX600_FMwebp_.jpg" alt="Movie 9"></div>
+
+  <div class="thumbnail"><img src="https://m.media-amazon.com/images/S/pv-target-images/5e0451c701ba6507b20b914a50eff4fd3305333c256d520e2f5840808e29e0de._UR1920,1080_CLs|1920,1080|/G/bundle/BottomRightCardGradient16x9.png,/G/01/digital/video/merch/subs/benefit-id/m-r/Prime/logos/channels-logo-white.png|0,0,1920,1080+0,0,1920,1080+1578,847,263,156_SX600_FMwebp_.png" alt="Movie 12"></div>
+
+  <div class="thumbnail"><img src="https://m.media-amazon.com/images/S/pv-target-images/bb410662a8bc82da0bd4b881a9f4988bce01777401cbdf1635adcfe5d14301a6._UR1920,1080_CLs|1920,1080|/G/bundle/BottomRightCardGradient16x9.png,/G/01/digital/video/merch/subs/benefit-id/m-r/Prime/logos/channels-logo-white.png|0,0,1920,1080+0,0,1920,1080+1578,847,263,156_SX600_FMwebp_.jpg" alt="Movie 2"></div>
+
+  <div class="thumbnail"><img src="https://m.media-amazon.com/images/S/pv-target-images/dba04e61f844b918594d6884cb4575bb9bb11426908d391c446aa3d21a6983fa._UR1920,1080_CLs|1920,1080|/G/bundle/BottomRightCardGradient16x9.png,/G/01/digital/video/merch/subs/benefit-id/m-r/Prime/logos/channels-logo-white.png|0,0,1920,1080+0,0,1920,1080+1578,847,263,156_SX600_FMwebp_.png" alt="Movie 1"></div>
+
+  <div class="thumbnail"><img src="https://m.media-amazon.com/images/S/pv-target-images/96a97cdb5403621ad2b59847a1db13b54cd909e6833c166634a1945643adb6ce._UR1920,1080_CLs|1920,1080|/G/bundle/BottomRightCardGradient16x9.png,/G/01/digital/video/merch/subs/benefit-id/m-r/Prime/logos/channels-logo-white.png|0,0,1920,1080+0,0,1920,1080+1578,847,263,156_SX600_FMwebp_.jpg" alt="Movie 5"></div>
+
+  <div class="thumbnail"><img src="https://m.media-amazon.com/images/S/pv-target-images/72b69c5d0f16e4548fa2b9a06745c70a6f29f8e1e6f9a25cd4ec4286dc11b7f7._UR1920,1080_CLs|1920,1080|/G/bundle/BottomRightCardGradient16x9.png,/G/01/digital/video/merch/subs/benefit-id/m-r/Prime/logos/channels-logo-white.png|0,0,1920,1080+0,0,1920,1080+1578,847,263,156_SX600_FMwebp_.png" alt="Movie 7"></div>
+
+  <div class="thumbnail"><img src="https://m.media-amazon.com/images/S/pv-target-images/6e9203e04bb26ab3c124b1544929041fd1815afd63b95d587fee1f28df9f4e08._UR1920,1080_CLs|1920,1080|/G/bundle/BottomRightCardGradient16x9.png,/G/01/digital/video/merch/subs/benefit-id/m-r/Prime/logos/channels-logo-white.png|0,0,1920,1080+0,0,1920,1080+1578,847,263,156_SX600_FMwebp_.jpg" alt="Movie 4"></div>
+
+  <div class="thumbnail"><img src="https://cdn.dribbble.com/userupload/13597391/file/original-71ca481cc3fadd1f5daa88d94b4b8711.png?resize=752x&vertical=center" alt="Movie 8"></div>
+
+  <div class="thumbnail"><img src="https://m.media-amazon.com/images/S/pv-target-images/bde77bcc13f9b2b42f06f8a6048f32a2cfa880e0ea69f85d03b8e91a4d00bf68._UR1920,1080_CLs|1920,1080|/G/bundle/BottomRightCardGradient16x9.png,/G/01/digital/video/merch/subs/benefit-id/m-r/Prime/logos/channels-logo-white.png|0,0,1920,1080+0,0,1920,1080+1578,847,263,156_SX600_FMwebp_.jpg" alt="Movie 3"></div>
+
+  <div class="thumbnail"><img src="https://m.media-amazon.com/images/S/pv-target-images/4f07b84cb9c89c3cb519ae80d7dd99f2d7d3476db809e49b0f3c54b0f7416eae._UR1920,1080_CLs|1920,1080|/G/bundle/BottomRightCardGradient16x9.png,/G/01/digital/video/merch/subs/benefit-id/m-r/Prime/logos/channels-logo-white.png|0,0,1920,1080+0,0,1920,1080+1578,847,263,156_SX600_FMwebp_.jpg" alt="Movie 11"></div>
+
+  <div class="thumbnail"><img src="https://m.media-amazon.com/images/S/pv-target-images/cf5a92bad13119066f3aa3da434bdd5fb797710549dfb8f31205dace1bfef269._UR1920,1080_CLs|1920,1080|/G/bundle/BottomRightCardGradient16x9.png,/G/01/digital/video/merch/subs/benefit-id/m-r/Prime/logos/channels-logo-white.png|0,0,1920,1080+0,0,1920,1080+1578,847,263,156_SX600_FMwebp_.jpg" alt="Movie 10"></div>
+
+  <div class="thumbnail"><img src="https://m.media-amazon.com/images/S/pv-target-images/91f6feff5c6e9291de9e39f22fc80473425766d660b10b5b166751a3cde3930e._UR1920,1080_CLs|1920,1080|/G/bundle/BottomRightCardGradient16x9.png,/G/01/digital/video/merch/subs/benefit-id/m-r/Prime/logos/channels-logo-white.png|0,0,1920,1080+0,0,1920,1080+1578,847,263,156_SX600_FMwebp_.png" alt="Movie 6"></div>
+</div>
+</div>
 </section>
 
    

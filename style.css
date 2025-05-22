@@ -5,11 +5,165 @@ body {
   color: white;
 }
 
+/* ===== NAVBAR CORE STYLES ===== */
 .navbar {
+  width: 95%;
+  max-width: 1400px;
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1000;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  height: 65px;
+  display: flex;
+  flex-wrap: wrap; /* NEW: Allows items to wrap on small screens */
+  align-items: center;
+  justify-content: space-between;
+  background-color: #0f0f0fc1;
+  padding: 10px 20px;
+  gap: 15px; /* NEW: Consistent spacing between items */
+  transition: all 0.3s ease; /* MODIFIED: Changed to 'all' */
+}
+
+/* ===== LOGO ===== */
+.logo {
+  font-size: 1.8em;
+  font-weight: bold;
+  white-space: nowrap; /* NEW: Prevents text wrapping */
+  margin-right: auto; /* NEW: Pushes other items to right */
+}
+
+/* ===== NAV LINKS ===== */
+.nav-links {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  align-items: center;
+  gap: 10px; /* NEW: Replaces individual margins */
+}
+
+.nav-links li {
+  margin: 0; /* MODIFIED: Now using gap instead */
+}
+
+.nav-links a {
+  color: rgb(250, 248, 248);
+  padding: 8px 12px; /* MODIFIED: Slightly reduced */
+  text-decoration: none;
+  font-weight: 700;
+  border-radius: 0.5em;
+  white-space: nowrap; /* NEW: Prevents text wrapping */
+  transition: all 0.2s ease; /* MODIFIED: Changed to 'all' */
+}
+
+/* ===== RIGHT SECTION ===== */
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* NEW: Consistent spacing */
+  margin-left: auto; /* NEW: Pushes to far right */
+}
+
+/* ===== LANGUAGE SELECTOR ===== */
+.language-selector {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding: 5px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* ===== JOIN BUTTON ===== */
+.join-btn {
+  background-color: #00a8e1;
+  color: white;
+  border: none;
+  padding: 0.5em 1em;
+  border-radius: 0.5em;
+  font-weight: bold;
+  cursor: pointer;
+  white-space: nowrap; /* NEW */
+}
+
+/* ===== MOBILE STYLES ===== */
+@media (max-width: 992px) {
+  /* First breakpoint: Hide less important items */
+  .nav-links li:nth-child(n+5), /* Hides items after 4th */
+  .divider {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  /* Second breakpoint: Switch to mobile menu */
+  .navbar {
+    height: auto;
+    min-height: 65px;
+    padding: 10px 15px;
+  }
+  
+  .nav-links {
+    display: none;
+    width: 100%;
+    order: 3; /* Moves below logo and buttons */
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.9);
+    margin-top: 15px;
+    border-radius: 0 0 10px 10px;
+    padding: 10px 0;
+  }
+  
+  .nav-links.show {
+    display: flex;
+  }
+  
+  .nav-links li {
+    width: 100%;
+    text-align: center;
+    margin: 5px 0;
+  }
+  
+  .nav-links a {
+    display: block;
+    padding: 10px;
+  }
+  
+  .menu-toggle {
+    display: block;
+    order: 2; /* Positions between logo and nav-right */
+  }
+  
+  /* Compact the join button */
+  .join-btn {
+    padding: 0.4em 0.8em;
+    font-size: 0.9em;
+  }
+}
+
+@media (max-width: 480px) {
+  /* Most compact view */
+  .logo {
+    font-size: 1.5em;
+  }
+  
+  .language-selector span {
+    display: none; /* Hides "EN" text */
+  }
+  
+  .prime-icon {
+    padding: 8px;
+  }
+}
+/* .navbar {
   width: 95%;
   position: fixed;
   z-index: 1000;
-  border-radius: 10px 0px 10px 0px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     height:65px;
     margin: 0px 40px;
@@ -20,11 +174,18 @@ body {
   padding: 10px 15px 10px 15px;
 
   transition: box-shadow 0.3s ease, transform 0.3s ease;
-}
+} */
 
 .logo {
   font-size: 1.8em;
   font-weight: bold;
+  transition: font-size 0.3s ease;
+}
+
+@media (max-width: 768px) {
+  .logo {
+    font-size: 1.4em; /* Smaller on mobile */
+  }
 }
 
 .logo span {
@@ -32,16 +193,33 @@ body {
 }
 
 .nav-links {
-  list-style: none;
   display: flex;
-  align-items: center;
+  gap: 10px; /* Consistent spacing */
+  list-style: none;
   margin: 0;
   padding: 0;
+  align-items: center;
 }
 
-.nav-links li {
-  margin: 0 0.6em;
+@media (max-width: 768px) {
+  .nav-links {
+    display: none; /* Hidden by default on mobile */
+    width: 100%;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.9);
+    margin-top: 10px;
+    border-radius: 0 0 10px 10px;
+  }
+
+  .nav-links.show {
+    display: flex; /* Toggle visibility */
+  }
+
+  .nav-links li {
+    margin: 0.5em 0; /* Better spacing */
+  }
 }
+  
 
 .nav-links a {
   color: #333; /* Default link color */
@@ -327,7 +505,7 @@ color: white;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 10px;
+  
 }
 
 .scroll-header h2 {
@@ -345,24 +523,29 @@ color: white;
 .scroll-container {
   display: flex;
   gap: 15px;
+  padding-top: 30px;
+  padding-bottom: 30px;
   overflow-x: auto;
   scroll-behavior: smooth;
-  padding-bottom: 10px;
+  
 }
 
 .scroll-container::-webkit-scrollbar {
-  height: 8px;
+  height: 3px;
 }
 
 
 
 .thumbnail {
+  align-items: center;
+  justify-content: center;
   flex: 0 0 auto;
   width: 245px;
   height: 138px;
   border-radius: 8px;
   overflow: hidden;
   box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+  transition: transform 0.3s ease;
 }
 
 .thumbnail img {
@@ -371,6 +554,64 @@ color: white;
   object-fit: cover;
 }
 
+/* --- Section 2 style --- */
+.scroll-section-alt {
+  margin: 40px 0;
+  padding: 0 20px;
+}
+
+.scroll-container-alt {
+  display: flex;
+  overflow-x: auto;
+  gap: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  scroll-behavior: smooth;
+}
+
+.scroll-container-alt::-webkit-scrollbar {
+  height: 8px;
+}
+
+
+
+.ranked-thumbnail {
+  position: relative;
+  flex: 0 0 auto;
+  width: 245px;
+  height: 138px;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+  transition: transform 0.3s ease;
+}
+
+.ranked-thumbnail img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* --- Hover effect --- */
+.thumbnail:hover,
+.ranked-thumbnail:hover {
+  transform: scale(1.25);
+  z-index: 10000;
+}
+
+/* --- Ranking Number --- */
+.thumbnail-rank-overlay {
+  position: relative;
+  margin-top: -30px; /* pull up over bottom of image */
+  width: 100%;
+  height: 40px;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent);
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  padding-bottom: 5px;
+}
 .footer {
     background-color: #222222;
     padding: 24px;
