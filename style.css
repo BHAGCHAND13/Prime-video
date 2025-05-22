@@ -220,6 +220,10 @@ select {
 .logo span {
   color: #00A8E1;
 }
+.gap{
+  display: flex;
+  gap: 100px;
+}
 
 /* Navigation Links */
 .nav-links  {
@@ -303,14 +307,14 @@ select {
 }
 .subbtn {
   font-weight: 400;
-   background-color: #fafafa;
-  color: rgb(0, 0, 0);
+  
+  color: rgb(255, 255, 255);
   border: none;
   padding: 8px 16px;
   border-radius: 4px;
   font-weight: bold;
   cursor: pointer;
-  transition: background-color 0.6s;
+  transition: background-color 0.1s;
   text-decoration: none;
 }
 
@@ -324,12 +328,15 @@ select {
 
 /* Right Navigation Section */
 .nav-right {
+  justify-content: center;
   display: flex;
   align-items: center;
   gap: 20px;
 }
 
 .icon-btn {
+  flex-wrap: wrap;
+  
   background: none;
   border: none;
   color: white;
