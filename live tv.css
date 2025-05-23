@@ -14,6 +14,7 @@ body {
 
 
 .prime-nav {
+  z-index: 1000;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -323,12 +324,12 @@ body {
         width: 100%;
         background-color: black;
         padding: 20px;
-        z-index: 1000;
+        z-index: 1000000;
     }
     
     .nav-links.active li {
         margin: 10px 0;
-        z-index: 1000;
+        z-index: 1000000;
     }
 }  
 
@@ -797,9 +798,9 @@ body {
         .channel-box {
             background-color: #1c1f24;
             border-radius: 12px;
-            overflow: hidden;
+            overflow: hidden; 
             display: flex;
-            flex-direction: column;
+            flex-direction: column; 
             justify-content: center;
             align-items: center;
             width: 100px;
@@ -834,6 +835,7 @@ body {
             height: 6px;
             border-radius: 4px;
             overflow: hidden;
+        
         }
 
         .progress-bar .progress {

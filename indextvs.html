@@ -10,6 +10,37 @@
  <body>
 
 
+<script>
+//    const nav = document.querySelector('.prime-nav');
+//   const toggleBtn = document.querySelector('.nav-toggle');
+
+//   toggleBtn.addEventListener('click', () => {
+//     nav.classList.toggle('open');
+//   });
+
+//     // New: Close menu when clicking on mobile links
+//     document.querySelectorAll('.mobile-nav-link').forEach(link => {
+//     link.addEventListener('click', () => {
+//         nav.classList.remove('open');
+//         document.body.style.overflow = '';
+//     });
+//     });
+
+//     // New: Close menu when clicking outside (optional)
+//     document.addEventListener('click', (e) => {
+//     if (!nav.contains(e.target)) {
+//         nav.classList.remove('open');
+//         document.body.style.overflow = '';
+//     }
+//     });
+
+
+
+function toggleMenu() {
+      document.querySelector('.nav-links').classList.toggle('active');
+    }
+
+</script>
 
 <!-- <nav class="navbar" >
 
@@ -96,7 +127,7 @@
         <!-- <button class="join-prime-btn">Join Prime<a href="joinprime.html"></a></button> -->
         <a href="joinprime.html" class="join-prime-btn">Join Prime</a>
     </div>
-</nav> <br>
+</nav> 
 
 
   <section class="hero">
