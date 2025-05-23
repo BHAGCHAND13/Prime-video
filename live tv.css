@@ -29,8 +29,9 @@ body {
   margin-left: 25px;
   align-self: center;
   /* height: 100%; */
-  width: 1200px;
-  border-radius: 6px;
+  width: 98%;
+ border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
   box-sizing: border-box;
   /* box-shadow: 0 2px 5px rgba(0,0,0,0.1);     */
   /* box-shadow: 0 2px 5px rgba(24, 17, 17, 0.1); */
@@ -185,8 +186,11 @@ body {
   background: #3f96ed;
   border: none;
   color: #ffff;
-  padding: 13px 15px;
-  font-weight: 600;
+  /* padding: 13px 15px; */
+  padding: 10px 13px;
+  text-decoration: none;
+  /* font-weight: 600; */
+  font-size: 15px;
   border-radius: 8px;
   cursor: pointer;
 }
@@ -196,7 +200,6 @@ body {
     box-shadow: 0.2px 0.2px 0.2px 0.2px #5896d3;
     translate: scale(1.05);
 }
-
 
 /* Hamburger button */
 .nav-toggle {
