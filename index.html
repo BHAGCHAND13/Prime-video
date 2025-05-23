@@ -10,28 +10,34 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"/>
 
 <script>
-   const nav = document.querySelector('.prime-nav');
-  const toggleBtn = document.querySelector('.nav-toggle');
+//    const nav = document.querySelector('.prime-nav');
+//   const toggleBtn = document.querySelector('.nav-toggle');
 
-  toggleBtn.addEventListener('click', () => {
-    nav.classList.toggle('open');
-  });
+//   toggleBtn.addEventListener('click', () => {
+//     nav.classList.toggle('open');
+//   });
 
-    // New: Close menu when clicking on mobile links
-    document.querySelectorAll('.mobile-nav-link').forEach(link => {
-    link.addEventListener('click', () => {
-        nav.classList.remove('open');
-        document.body.style.overflow = '';
-    });
-    });
+//     // New: Close menu when clicking on mobile links
+//     document.querySelectorAll('.mobile-nav-link').forEach(link => {
+//     link.addEventListener('click', () => {
+//         nav.classList.remove('open');
+//         document.body.style.overflow = '';
+//     });
+//     });
 
-    // New: Close menu when clicking outside (optional)
-    document.addEventListener('click', (e) => {
-    if (!nav.contains(e.target)) {
-        nav.classList.remove('open');
-        document.body.style.overflow = '';
+//     // New: Close menu when clicking outside (optional)
+//     document.addEventListener('click', (e) => {
+//     if (!nav.contains(e.target)) {
+//         nav.classList.remove('open');
+//         document.body.style.overflow = '';
+//     }
+//     });
+
+
+
+function toggleMenu() {
+      document.querySelector('.nav-links').classList.toggle('active');
     }
-    });
 
 </script>
 </head>
@@ -55,13 +61,13 @@
         <li><a href="subscription.html" class="subscriptions-link">Subscriptions</a></li>
         </ul>
 
-        <div class="mobile-nav-menu">
+        <!-- <div class="mobile-nav-menu">
             <a href="#home-section" class="mobile-nav-link">Home</a>
             <a href="#movies.html" class="mobile-nav-link">Movies</a>
             <a href="tvshows.html#" class="mobile-nav-link">TV shows</a>
             <a href="#livetv.html" class="mobile-nav-link">Live TV</a>
             <a href="subscription.html" class="mobile-nav-link">Subscriptions</a>
-        </div>
+        </div>-->
     </div>
   
 
