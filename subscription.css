@@ -298,6 +298,32 @@ body {
   }
 }
 
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+    }
+    
+    .nav-toggle {
+        display: block;
+    }
+    
+    .nav-links.active {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        background-color: #192734;
+        padding: 20px;
+        z-index: 999;
+    }
+    
+    .nav-links.active li {
+        margin: 10px 0;
+    }
+  }
+    
 /* Hero Section */
 .hero {
   position: relative;
