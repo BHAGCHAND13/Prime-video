@@ -49,7 +49,7 @@
         </button>
         <img src="HomeImages/user.svg" alt="User Avatar" class="user-avatar" />
         <!-- <i class="fa-solid fa-user"></i> -->
-        <button class="join-prime-btn">Join Prime</button>
+         <a href="joinprime.html" class="join-prime-btn">Join Prime</a>
     </div>
 </nav>
 
@@ -228,5 +228,17 @@
         <p>&copy; 1996-2025, Amazon.com, Inc. or its affiliates</p>
     </footer>
 </div>
+<script>
+  // const nav = document.querySelector('.prime-nav');
+  // const toggleBtn = document.querySelector('.nav-toggle');
+
+  // toggleBtn.addEventListener('click', () => {
+  //   nav.classList.toggle('open');
+  // });
+
+  function toggleMenu() {
+      document.querySelector('.nav-links').classList.toggle('active');
+    }
+</script>
 </body>
 </html>
