@@ -6,6 +6,7 @@ body {
 }
 
 .prime-nav {
+  z-index: 10000;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -21,7 +22,7 @@ body {
   margin-left: 25px;
   align-self: center;
   /* height: 100%; */
-  width: 95%;
+  width: 97%;
   border-bottom-left-radius: 6px;
   border-bottom-right-radius: 6px;
   box-sizing: border-box;
