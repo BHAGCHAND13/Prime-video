@@ -25,8 +25,18 @@ document.addEventListener('DOMContentLoaded', function() {
       window.requestAnimationFrame(updateNavbarVisibility);
       ticking = true;
     }
-  });
+  });  
 
   // Initialize navbar state
   updateNavbarVisibility();
+});
+
+
+document.addEventListener('DOMContentLoaded', function() {
+  const menuToggle = document.querySelector('.menu-toggle');
+  const navLinks = document.querySelector('.nav-links');
+  
+  menuToggle.addEventListener('click', function() {
+    navLinks.classList.toggle('active');
+  });
 });
